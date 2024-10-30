@@ -9,7 +9,7 @@ for (let i = 0; i< navbarItem.length; i++){
 }
 
 var typed = new Typed(".multiple-text", {
-    strings: ['UW Allen School Undergraduate', "Full-Stuck Developer","BLG!BLG!BLG!BLG!"],
+    strings: ['UW Allen School Undergraduate', "Full-Stack Developer","BLG!BLG!BLG!BLG!"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
