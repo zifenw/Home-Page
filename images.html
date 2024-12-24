@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/style.about.css">
+    <script type="text/javascript" src="about.js" defer></script>
+    <title>about</title>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">ZifengWEB.</a>
+        
+        <nav class="navbar">
+            <a href="home.html" class="item" style="--i: 2">Home</a>
+            <a href="about.html" class="active item" style="--i: 1">About</a>
+            <a href="skills.html" class="item" style="--i: 3">Skills</a>
+            <a href="portfolio.html" class="item" style="--i: 4">Portfolio</a>
+            <a href="contact.html" class="item" style="--i: 5">Contact</a>
+        </nav>
+    </header>
+    <!-- This is a single-line comment in HTML -->
+    <!-- .content + enter-->
+    <!-- <div class="content">    </div>  -->
+    <!-- ctrl + / 选中sth.变成 content -->
+    <!-- flex布局 -->
+    <span id="sidebar">
+        <ul>
+            <li>
+                <span class="logo1">AboutZifeng</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>    
+                </button>
+            </li>
+            <li>
+                <a href="about.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400H276q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"/></svg>
+                    <span>README</span>
+                </a>
+            </li>
+            <li>
+                <a href="achievements.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-800q-33 0-56.5-23.5T400-880q0-33 23.5-56.5T480-960q33 0 56.5 23.5T560-880q0 33-23.5 56.5T480-800ZM360-200v-480q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-800l20 80q-56 15-118 25t-122 15v480h-80v-240h-80v240h-80ZM320 0q-17 0-28.5-11.5T280-40q0-17 11.5-28.5T320-80q17 0 28.5 11.5T360-40q0 17-11.5 28.5T320 0Zm160 0q-17 0-28.5-11.5T440-40q0-17 11.5-28.5T480-80q17 0 28.5 11.5T520-40q0 17-11.5 28.5T480 0Zm160 0q-17 0-28.5-11.5T600-40q0-17 11.5-28.5T640-80q17 0 28.5 11.5T680-40q0 17-11.5 28.5T640 0Z"/></svg>
+                    <span>Achievements</span>
+                </a>
+            </li>
+            <li>
+                <button onclick= toggleSubMenu(this) class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-160q-33 0-56.5-23.5T240-240v-120h120v-90q-35-2-66.5-15.5T236-506v-44h-46L60-680q36-46 89-65t107-19q27 0 52.5 4t51.5 15v-55h480v520q0 50-35 85t-85 35H320Zm120-200h240v80q0 17 11.5 28.5T720-240q17 0 28.5-11.5T760-280v-440H440v24l240 240v56h-56L510-514l-8 8q-14 14-29.5 25T440-464v104ZM224-630h92v86q12 8 25 11t27 3q23 0 41.5-7t36.5-25l8-8-56-56q-29-29-65-43.5T256-684q-20 0-38 3t-36 9l42 42Zm376 350H320v40h286q-3-9-4.5-19t-1.5-21Zm-280 40v-40 40Z"/></svg>
+                    <span>My story</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="story.html#background" onclick="setActive(this)">Background</a></li>
+                        <li><a href="story.html#career" onclick="setActive(this)">Career Journey</a></li>
+                        <li><a href="story.html#fields" onclick="setActive(this)">Interests Fields</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick= toggleSubMenu(this) class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                    <span>Hobbies</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="hobbies.html#sports" onclick="setActive(this)">Sports</a></li>
+                        <li><a href="hobbies.html#boardgame" onclick="setActive(this)">Boardgame</a></li>
+                        <li><a href="hobbies.html#music" onclick="setActive(this)">Music</a></li>
+                    </div> 
+                </ul>
+            </li>
+            <li>
+                <button onclick= toggleSubMenu(this) class="dropdown-btn active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"/></svg>
+                    <span>Images</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="images.html#scene" onclick="setActive(this)">Scene</a></li>
+                        <li><a href="images.html#people" onclick="setActive(this)">People</a></li>
+                        <li><a href="images.html#else" onclick="setActive(this)">Else</a></li>                       
+                    </div>
+
+                </ul>
+            </li>
+        </ul>
+    </span>
+
+
+
+
+    
+    <main>
+        <div class="container scroll-target" id="scene">
+            <h2>scene</h2>
+            <p>Hello, my name is Zifeng Wang. I am currently studying Computer Science at the University of Washington, where I am excited to explore various aspects of technology, from software development to AI. I have a strong interest in solving real-world problems through innovative solutions, and I'm passionate about learning new skills and working on projects that challenge me. In my free time, I enjoy exploring new programming languages, participating in tech communities, and improving my problem-solving abilities. I'm looking forward to applying my knowledge and contributing to impactful projects in the future.</p>
+        </div>
+        <div class="container scroll-target" id="people">
+            <h2>people</h2>
+            <p>Hello, my name is Zifeng Wang. I am currently studying Computer Science at the University of Washington, where I am excited to explore various aspects of technology, from software development to AI. I have a strong interest in solving real-world problems through innovative solutions, and I'm passionate about learning new skills and working on projects that challenge me. In my free time, I enjoy exploring new programming languages, participating in tech communities, and improving my problem-solving abilities. I'm looking forward to applying my knowledge and contributing to impactful projects in the future.</p>
+        </div>
+        <div class="container scroll-target" id="else">
+            <h2>else</h2>
+            <p>Hello, my name is Zifeng Wang. I am currently studying Computer Science at the University of Washington, where I am excited to explore various aspects of technology, from software development to AI. I have a strong interest in solving real-world problems through innovative solutions, and I'm passionate about learning new skills and working on projects that challenge me. In my free time, I enjoy exploring new programming languages, participating in tech communities, and improving my problem-solving abilities. I'm looking forward to applying my knowledge and contributing to impactful projects in the future.</p>
+        </div>
+    </main>
+    <div class="about">
+        
+        
+    </div>
+</body>
+</html>
